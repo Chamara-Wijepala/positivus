@@ -1,5 +1,10 @@
 function App() {
-	return <h1 className="text-emerald-600">Hello, World!</h1>;
+	return (
+		<div>
+			<p className="bg-brand-dark-900 text-brand-green-300">Green color</p>
+			<p className="bg-brand-dark-900 text-brand-gray-200">Grey color</p>
+		</div>
+	);
 }
 
 export default App;
