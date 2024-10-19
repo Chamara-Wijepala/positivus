@@ -14,6 +14,9 @@ export default {
 					900: '#191f23',
 				},
 			},
+			fontFamily: {
+				'space-grotesk': ['Space Grotesk', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],
