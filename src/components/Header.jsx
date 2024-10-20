@@ -34,7 +34,7 @@ export default function Header() {
 						</button>
 
 						<nav className="mt-16 flex flex-col items-center justify-center gap-6 text-xl">
-							<a href="">About us</a>
+							<a href="#about">About us</a>
 							<a href="">Services</a>
 							<a href="">Use Cases</a>
 							<a href="">Pricing</a>
@@ -45,7 +45,7 @@ export default function Header() {
 
 					{/* Desktop nav */}
 					<nav className="hidden xl:text-xl lg:flex items-center gap-6 lg:gap-10">
-						<a href="">About us</a>
+						<a href="#about">About us</a>
 						<a href="">Services</a>
 						<a href="">Use Cases</a>
 						<a href="">Pricing</a>
