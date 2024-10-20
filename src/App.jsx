@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import LogoSection from './components/LogoSection';
 import Container from './components/Container';
 import HeroImage from './assets/images/hero.svg?react';
 
@@ -33,6 +34,8 @@ function App() {
 					</div>
 				</Container>
 			</section>
+
+			<LogoSection />
 		</div>
 	);
 }

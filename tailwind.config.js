@@ -17,6 +17,26 @@ export default {
 			fontFamily: {
 				'space-grotesk': ['Space Grotesk', 'sans-serif'],
 			},
+			screens: {
+				// Required for the logo scroller
+				xs: '520px',
+			},
+			keyframes: {
+				scroll: {
+					to: {
+						// The value the percentage is being subtracted by must always be
+						// half of the gap of the scroll list.
+						transform: 'translateX(calc(-50% - 1.25rem))',
+					},
+				},
+				'scroll-desktop': {
+					to: {
+						// The value the percentage is being subtracted by must always be
+						// half of the gap of the scroll list.
+						transform: 'translateX(calc(-50% - 2.5rem))',
+					},
+				},
+			},
 		},
 	},
 	plugins: [],
