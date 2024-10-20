@@ -33,7 +33,12 @@ export default function Header() {
 							<CloseIcon />
 						</button>
 
-						<nav className="mt-16 flex flex-col items-center justify-center gap-6 text-xl">
+						<nav
+							onClick={(e) => {
+								if (e.target.tagName === 'A') toggleSidebar();
+							}}
+							className="mt-16 flex flex-col items-center justify-center gap-6 text-xl"
+						>
 							<a href="#about">About us</a>
 							<a href="">Services</a>
 							<a href="">Use Cases</a>
