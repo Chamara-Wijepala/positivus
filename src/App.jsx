@@ -4,6 +4,7 @@ import ServicesSection from './components/ServicesSection';
 import Container from './components/Container';
 import HeroImage from './assets/images/hero.svg?react';
 import CTAImage from './assets/images/cta-image.svg?react';
+import AltLinkIcon from './assets/icons/link-alt.svg?react';
 
 function App() {
 	return (
@@ -62,6 +63,71 @@ function App() {
 						</div>
 					</div>
 				</Container>
+			</section>
+
+			<section className="my-16 md:my-36">
+				<div className="max-w-[77.5rem] mx-auto">
+					<div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 px-5 my-10 md:my-20">
+						<h2 className="bg-brand-green-300 text-4xl md:text-[2.5rem] px-1 rounded-lg">
+							Case Studies
+						</h2>
+						<p className="max-w-[55ch] text-center md:text-left">
+							Explore Real-Life Examples of Our Proven Digital Marketing Success
+							through Our Case Studies
+						</p>
+					</div>
+
+					<div className="px-5 py-5 grid gap-5 grid-flow-col auto-cols-[21.875rem] overflow-x-scroll xl:bg-brand-dark-900 xl:rounded-[2.5rem] xl:justify-between xl:grid-cols-[1fr_min-content_1fr_min-content_1fr]">
+						<div className="bg-brand-dark-900 text-brand-gray-200 py-10 px-12 rounded-[2.5rem]">
+							<p className="mb-5">
+								For a local restaurant, we implemented a targeted PPC campaign
+								that resulted in a 50% increase in website traffic and a 25%
+								increase in sales.
+							</p>
+
+							<div>
+								<a href="#" className="flex items-center gap-4">
+									<span className="text-brand-green-300">Learn more</span>
+									<AltLinkIcon />
+								</a>
+							</div>
+						</div>
+
+						<span className="hidden xl:block my-10 border-[1px] border-brand-gray-200 border-opacity-50"></span>
+
+						<div className="bg-brand-dark-900 text-brand-gray-200 py-10 px-12 rounded-[2.5rem]">
+							<p className="mb-5">
+								For a B2B software company, we developed an SEO strategy that
+								resulted in a first page ranking for key keywords and a 200%
+								increase in organic traffic.
+							</p>
+
+							<div>
+								<a href="#" className="flex items-center gap-4">
+									<span className="text-brand-green-300">Learn more</span>
+									<AltLinkIcon />
+								</a>
+							</div>
+						</div>
+
+						<span className="hidden xl:block my-10 border-[1px] border-brand-gray-200 border-opacity-50"></span>
+
+						<div className="bg-brand-dark-900 text-brand-gray-200 py-10 px-12 rounded-[2.5rem]">
+							<p className="mb-5">
+								For a national retail chain, we created a social media marketing
+								campaign that increased followers by 25% and generated a 20%
+								increase in online sales.
+							</p>
+
+							<div>
+								<a href="#" className="flex items-center gap-4">
+									<span className="text-brand-green-300">Learn more</span>
+									<AltLinkIcon />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
 	);
