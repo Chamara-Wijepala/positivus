@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import LogoSection from './components/LogoSection';
+import ServicesSection from './components/ServicesSection';
 import Container from './components/Container';
 import HeroImage from './assets/images/hero.svg?react';
 
@@ -36,6 +37,8 @@ function App() {
 			</section>
 
 			<LogoSection />
+
+			<ServicesSection />
 		</div>
 	);
 }
