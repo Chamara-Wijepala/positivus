@@ -73,7 +73,7 @@ export default function ContactSection() {
 							<label htmlFor="contact-name">Name</label>
 							<input
 								type="text"
-								name="email"
+								name="name"
 								id="contact-name"
 								placeholder="Name"
 								className="px-5 py-4 md:px-8 mb-5 md:mb-8 border-[1px] border-brand-dark-900 rounded-xl outline-none"
