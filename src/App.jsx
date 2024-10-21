@@ -2,6 +2,7 @@ import Header from './components/Header';
 import LogoSection from './components/LogoSection';
 import ServicesSection from './components/ServicesSection';
 import AccordionSection from './components/AccordionSection';
+import TeamSection from './components/TeamSection';
 import Container from './components/Container';
 import HeroImage from './assets/images/hero.svg?react';
 import CTAImage from './assets/images/cta-image.svg?react';
@@ -132,6 +133,8 @@ function App() {
 			</section>
 
 			<AccordionSection />
+
+			<TeamSection />
 		</div>
 	);
 }
