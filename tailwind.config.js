@@ -11,7 +11,7 @@ export default {
 					200: '#f3f3f3',
 				},
 				'brand-dark': {
-					900: '#191f23',
+					900: '#191a23',
 				},
 			},
 			fontFamily: {
