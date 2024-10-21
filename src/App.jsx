@@ -3,6 +3,7 @@ import LogoSection from './components/LogoSection';
 import ServicesSection from './components/ServicesSection';
 import Container from './components/Container';
 import HeroImage from './assets/images/hero.svg?react';
+import CTAImage from './assets/images/cta-image.svg?react';
 
 function App() {
 	return (
@@ -39,6 +40,29 @@ function App() {
 			<LogoSection />
 
 			<ServicesSection />
+
+			<section className="my-16 md:my-32">
+				<Container>
+					<div className="bg-brand-gray-200 rounded-[2.5rem] grid md:grid-cols-2 justify-items-center items-center">
+						<div className="flex flex-col gap-5 p-12">
+							<h2 className="text-2xl font-medium">Let's make things happen</h2>
+
+							<p>
+								Contact us today to learn more about how our digital marketing
+								services can help your business grow and succeed online.
+							</p>
+
+							<button className="flex justify-center items-center py-5 md:px-9 bg-brand-dark-900 text-white rounded-xl md:self-start">
+								Get your <span className="hidden">free</span> proposal
+							</button>
+						</div>
+
+						<div className="hidden md:block max-w-max">
+							<CTAImage className="scale-110" />
+						</div>
+					</div>
+				</Container>
+			</section>
 		</div>
 	);
 }
