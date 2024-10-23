@@ -101,7 +101,7 @@ function AccordionPanel({ number, heading, body }) {
 						isOpen
 							? 'border-t-[1px] py-4 md:pt-8 md:pb-0 mt-4 md:mt-8 opacity-100'
 							: 'border-t-0 py-0 mt-0 opacity-0',
-						'overflow-hidden border-brand-dark-900'
+						'overflow-hidden border-brand-dark-900 transition-all duration-300'
 					)}
 				>
 					{body}
