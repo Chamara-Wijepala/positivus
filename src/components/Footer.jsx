@@ -14,19 +14,19 @@ export default function Footer() {
 					</div>
 
 					<nav className="flex flex-col lg:flex-row gap-4 lg:gap-10 items-center">
-						<a href="" className="hover:underline">
+						<a href="#about" className="hover:underline">
 							About us
 						</a>
-						<a href="" className="hover:underline">
+						<a href="#services" className="hover:underline">
 							Services
 						</a>
-						<a href="" className="hover:underline">
+						<a href="#cases" className="hover:underline">
 							Use cases
 						</a>
-						<a href="" className="hover:underline">
+						<a href="#" className="hover:underline">
 							Pricing
 						</a>
-						<a href="" className="hover:underline">
+						<a href="#" className="hover:underline">
 							Blog
 						</a>
 					</nav>

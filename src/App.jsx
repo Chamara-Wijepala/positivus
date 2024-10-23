@@ -72,7 +72,7 @@ function App() {
 					</Container>
 				</section>
 
-				<section className="my-16 md:my-36">
+				<section id="cases" className="my-16 md:my-36">
 					<div className="max-w-[77.5rem] mx-auto">
 						<div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 px-5 my-10 md:my-20">
 							<h2 className="bg-brand-green-300 text-4xl md:text-[2.5rem] px-1 rounded-lg">

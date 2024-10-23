@@ -10,7 +10,7 @@ export default function ContactSection() {
 	}
 
 	return (
-		<section className="mt-16 mb-24 md:my-36">
+		<section id="contact" className="mt-16 mb-24 md:my-36">
 			<Container>
 				<div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 px-5 my-10 md:my-20">
 					<h2 className="bg-brand-green-300 text-4xl md:text-[2.5rem] px-1 rounded-lg">

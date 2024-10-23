@@ -40,11 +40,11 @@ export default function Header() {
 							className="mt-16 flex flex-col items-center justify-center gap-6 text-xl"
 						>
 							<a href="#about">About us</a>
-							<a href="">Services</a>
-							<a href="">Use Cases</a>
-							<a href="">Pricing</a>
-							<a href="">Blog</a>
-							<a href="">Request a quote</a>
+							<a href="#services">Services</a>
+							<a href="#cases">Use Cases</a>
+							<a href="#">Pricing</a>
+							<a href="#">Blog</a>
+							<a href="#contact">Request a quote</a>
 						</nav>
 					</div>
 
@@ -53,20 +53,20 @@ export default function Header() {
 						<a href="#about" className="hover:underline">
 							About us
 						</a>
-						<a href="" className="hover:underline">
+						<a href="#services" className="hover:underline">
 							Services
 						</a>
-						<a href="" className="hover:underline">
+						<a href="#cases" className="hover:underline">
 							Use Cases
 						</a>
-						<a href="" className="hover:underline">
+						<a href="#" className="hover:underline">
 							Pricing
 						</a>
-						<a href="" className="hover:underline">
+						<a href="#" className="hover:underline">
 							Blog
 						</a>
 						<a
-							href=""
+							href="#contact"
 							className="border-[1px] border-brand-dark-900 py-5 px-9 rounded-lg hover:bg-brand-dark-900 hover:text-brand-gray-200 transition-colors duration-300"
 						>
 							Request a quote
