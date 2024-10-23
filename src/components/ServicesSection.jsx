@@ -38,7 +38,9 @@ export default function ServicesSection() {
 						<div className="self-end">
 							<a href="#" className="flex items-center gap-4">
 								<AltLinkIcon />
-								<span className="hidden lg:block">Learn more</span>
+								<span className="hidden lg:block hover:underline">
+									Learn more
+								</span>
 							</a>
 						</div>
 
@@ -62,7 +64,9 @@ export default function ServicesSection() {
 						<div className="self-end">
 							<a href="#" className="flex items-center gap-4">
 								<AltLinkIcon />
-								<span className="hidden lg:block">Learn more</span>
+								<span className="hidden lg:block hover:underline">
+									Learn more
+								</span>
 							</a>
 						</div>
 
@@ -89,7 +93,7 @@ export default function ServicesSection() {
 						<div className="self-end">
 							<a href="#" className="flex items-center gap-4">
 								<LinkIcon />
-								<span className="hidden lg:block text-brand-gray-200">
+								<span className="hidden lg:block text-brand-gray-200 hover:underline">
 									Learn more
 								</span>
 							</a>
@@ -118,7 +122,9 @@ export default function ServicesSection() {
 						<div className="self-end">
 							<a href="#" className="flex items-center gap-4">
 								<AltLinkIcon />
-								<span className="hidden lg:block">Learn more</span>
+								<span className="hidden lg:block hover:underline">
+									Learn more
+								</span>
 							</a>
 						</div>
 
@@ -145,7 +151,9 @@ export default function ServicesSection() {
 						<div className="self-end">
 							<a href="#" className="flex items-center gap-4">
 								<AltLinkIcon />
-								<span className="hidden lg:block">Learn more</span>
+								<span className="hidden lg:block hover:underline">
+									Learn more
+								</span>
 							</a>
 						</div>
 
@@ -169,7 +177,7 @@ export default function ServicesSection() {
 						<div className="self-end">
 							<a href="#" className="flex items-center gap-4">
 								<LinkIcon />
-								<span className="hidden lg:block text-brand-gray-200">
+								<span className="hidden lg:block text-brand-gray-200 hover:underline">
 									Learn more
 								</span>
 							</a>

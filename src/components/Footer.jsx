@@ -14,19 +14,19 @@ export default function Footer() {
 					</div>
 
 					<nav className="flex flex-col lg:flex-row gap-4 lg:gap-10 items-center">
-						<a href="" className="underline">
+						<a href="" className="hover:underline">
 							About us
 						</a>
-						<a href="" className="underline">
+						<a href="" className="hover:underline">
 							Services
 						</a>
-						<a href="" className="underline">
+						<a href="" className="hover:underline">
 							Use cases
 						</a>
-						<a href="" className="underline">
+						<a href="" className="hover:underline">
 							Pricing
 						</a>
-						<a href="" className="underline">
+						<a href="" className="hover:underline">
 							Blog
 						</a>
 					</nav>
@@ -68,7 +68,7 @@ export default function Footer() {
 							/>
 						</label>
 
-						<button className="flex justify-center items-center py-5 px-9 bg-brand-green-300 text-brand-dark-900 rounded-xl">
+						<button className="flex justify-center items-center py-5 px-9 bg-brand-green-300 text-brand-dark-900 rounded-xl hover:bg-brand-green-500">
 							Subscribe to news
 						</button>
 					</form>

@@ -50,14 +50,24 @@ export default function Header() {
 
 					{/* Desktop nav */}
 					<nav className="hidden xl:text-xl lg:flex items-center gap-6 lg:gap-10">
-						<a href="#about">About us</a>
-						<a href="">Services</a>
-						<a href="">Use Cases</a>
-						<a href="">Pricing</a>
-						<a href="">Blog</a>
+						<a href="#about" className="hover:underline">
+							About us
+						</a>
+						<a href="" className="hover:underline">
+							Services
+						</a>
+						<a href="" className="hover:underline">
+							Use Cases
+						</a>
+						<a href="" className="hover:underline">
+							Pricing
+						</a>
+						<a href="" className="hover:underline">
+							Blog
+						</a>
 						<a
 							href=""
-							className="border-[1px] border-brand-dark-900 py-5 px-9 rounded-lg"
+							className="border-[1px] border-brand-dark-900 py-5 px-9 rounded-lg hover:bg-brand-dark-900 hover:text-brand-gray-200 transition-colors duration-300"
 						>
 							Request a quote
 						</a>

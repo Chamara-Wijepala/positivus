@@ -117,7 +117,7 @@ export default function ContactSection() {
 							<button
 								type="submit"
 								onClick={handleSubmit}
-								className="hidden md:flex justify-center items-center w-full py-5 bg-brand-dark-900 text-white rounded-xl"
+								className="hidden md:flex justify-center items-center w-full py-5 bg-brand-dark-900 text-white rounded-xl hover:bg-brand-dark-700 transition-colors duration-300"
 							>
 								Send Message
 							</button>
@@ -135,7 +135,7 @@ export default function ContactSection() {
 
 				<button
 					onClick={handleSubmit}
-					className="flex md:hidden justify-center items-center w-full py-5 bg-brand-dark-900 text-white rounded-xl"
+					className="flex md:hidden justify-center items-center w-full py-5 bg-brand-dark-900 text-white rounded-xl hover:bg-brand-dark-700 transition-colors duration-300"
 				>
 					Send Message
 				</button>

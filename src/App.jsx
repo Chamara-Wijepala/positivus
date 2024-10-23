@@ -35,7 +35,7 @@ function App() {
 									online through a range of services including SEO, PPC, social
 									media marketing, and content creation.
 								</p>
-								<button className="flex justify-center items-center py-5 px-9 bg-brand-dark-900 text-white rounded-xl md:self-start">
+								<button className="flex justify-center items-center py-5 px-9 bg-brand-dark-900 text-white rounded-xl md:self-start hover:bg-brand-dark-700 transition-colors duration-300">
 									Book a consultation
 								</button>
 							</div>
@@ -60,7 +60,7 @@ function App() {
 									services can help your business grow and succeed online.
 								</p>
 
-								<button className="flex justify-center items-center py-5 md:px-9 bg-brand-dark-900 text-white rounded-xl md:self-start">
+								<button className="flex justify-center items-center py-5 md:px-9 bg-brand-dark-900 text-white rounded-xl md:self-start hover:bg-brand-dark-700 transition-colors duration-300">
 									Get your <span className="hidden">free</span> proposal
 								</button>
 							</div>
@@ -94,7 +94,9 @@ function App() {
 
 								<div>
 									<a href="#" className="flex items-center gap-4">
-										<span className="text-brand-green-300">Learn more</span>
+										<span className="text-brand-green-300 hover:underline">
+											Learn more
+										</span>
 										<AltLinkIcon />
 									</a>
 								</div>
@@ -111,7 +113,9 @@ function App() {
 
 								<div>
 									<a href="#" className="flex items-center gap-4">
-										<span className="text-brand-green-300">Learn more</span>
+										<span className="text-brand-green-300 hover:underline">
+											Learn more
+										</span>
 										<AltLinkIcon />
 									</a>
 								</div>
@@ -128,7 +132,9 @@ function App() {
 
 								<div>
 									<a href="#" className="flex items-center gap-4">
-										<span className="text-brand-green-300">Learn more</span>
+										<span className="text-brand-green-300 hover:underline">
+											Learn more
+										</span>
 										<AltLinkIcon />
 									</a>
 								</div>

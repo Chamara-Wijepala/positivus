@@ -116,7 +116,7 @@ export default function TeamSection() {
 				<div className="flex flex-col">
 					<button
 						onClick={() => setIsExpanded(!isExpanded)}
-						className="flex justify-center items-center py-5 md:px-9 bg-brand-dark-900 text-white rounded-xl md:self-start md:ml-auto"
+						className="flex justify-center items-center py-5 md:px-9 bg-brand-dark-900 text-white rounded-xl md:self-start md:ml-auto hover:bg-brand-dark-700 transition-colors duration-300"
 					>
 						{isExpanded ? 'Collapse' : 'See whole team'}
 					</button>
