@@ -84,7 +84,7 @@ function App() {
 							</p>
 						</div>
 
-						<div className="px-5 py-5 grid gap-5 grid-flow-col auto-cols-[21.875rem] overflow-x-scroll xl:bg-brand-dark-900 xl:rounded-[2.5rem] xl:justify-between xl:grid-cols-[1fr_min-content_1fr_min-content_1fr]">
+						<div className="px-5 py-5 grid gap-5 grid-flow-col auto-cols-[21.875rem] overflow-x-scroll xl:bg-brand-dark-900 xl:rounded-[2.5rem] xl:justify-between xl:grid-cols-[1fr_min-content_1fr_min-content_1fr] lg:[&::-webkit-scrollbar]:hidden lg:[-ms-overflow-style:none] lg:[scrollbar-width:none]">
 							<div className="bg-brand-dark-900 text-brand-gray-200 py-10 px-12 rounded-[2.5rem]">
 								<p className="mb-5">
 									For a local restaurant, we implemented a targeted PPC campaign
