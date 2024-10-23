@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import Lenis from 'lenis';
 import Header from './components/Header';
 import LogoSection from './components/LogoSection';
 import ServicesSection from './components/ServicesSection';
@@ -11,6 +13,17 @@ import CTAImage from './assets/images/cta-image.svg?react';
 import AltLinkIcon from './assets/icons/link-alt.svg?react';
 
 function App() {
+	useEffect(() => {
+		const lenis = new Lenis();
+
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+
+		requestAnimationFrame(raf);
+	}, []);
+
 	return (
 		<div className="font-space-grotesk">
 			<Header />
