@@ -5,6 +5,7 @@ import LogoSection from './components/LogoSection';
 import ServicesSection from './components/ServicesSection';
 import AccordionSection from './components/AccordionSection';
 import TeamSection from './components/TeamSection';
+import TestimonialsSection from './components/TestimonialsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import Container from './components/Container';
@@ -160,7 +161,7 @@ function App() {
 
 				<TeamSection />
 
-				{/* TODO: Add testimonials section */}
+				<TestimonialsSection />
 
 				<ContactSection />
 			</main>
