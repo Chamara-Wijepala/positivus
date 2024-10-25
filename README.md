@@ -2,7 +2,7 @@
 
 A landing page for a fictional digital marketing agency.
 
-[Live demo](https://cwpositivus.netlify.app/)
+[Live demo](https://chamara-wijepala.github.io/positivus/)
 
 ## Technologies used
 
