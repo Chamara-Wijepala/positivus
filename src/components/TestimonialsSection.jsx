@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import clsx from 'clsx';
 import Container from './Container';
 import ArrowLeft from '../assets/icons/arrow-left.svg?react';
@@ -45,6 +45,11 @@ const testimonials = [
 
 export default function TestimonialsSection() {
 	const [itemIndex, setItemIndex] = useState(0);
+	const [carouselWidth, setCarouselWidth] = useState(0);
+	const [carouselItemWidth, setCarouselItemWidth] = useState(0);
+	const carouselRef = useRef(null);
+	const carouselItemRef = useRef(null);
+	const viewportWidth = useWindowWidth();
 
 	function next() {
 		if (itemIndex === testimonials.length - 1) return;
@@ -54,6 +59,22 @@ export default function TestimonialsSection() {
 		if (itemIndex === 0) return;
 		setItemIndex(itemIndex - 1);
 	}
+
+	useEffect(() => {
+		function handleResize() {
+			if (carouselRef.current) {
+				setCarouselWidth(carouselRef.current.offsetWidth);
+			}
+			if (carouselItemRef.current) {
+				setCarouselItemWidth(carouselItemRef.current.offsetWidth);
+			}
+		}
+
+		handleResize();
+		window.addEventListener('resize', handleResize);
+
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
 
 	return (
 		<section className="my-16 md:my-32">
@@ -68,20 +89,37 @@ export default function TestimonialsSection() {
 					</p>
 				</div>
 
-				<div className="bg-brand-dark-900 text-brand-gray-200 rounded-[2.5rem] py-8 overflow-hidden">
+				{/* carousel */}
+				<div
+					ref={carouselRef}
+					className="bg-brand-dark-900 text-brand-gray-200 rounded-[2.5rem] py-8 overflow-hidden"
+				>
+					{/* track */}
 					<div
 						// This doesn't work in tailwind.
 						style={{
-							transform: `translateX(calc(-100% * ${itemIndex}))`,
+							// Carousel sliding functionality
+							transform:
+								viewportWidth >= 1024 // tailwind lg breakpoint
+									? `translateX(calc(-640px * ${itemIndex}))`
+									: `translateX(calc(-${carouselWidth}px * ${itemIndex}))`,
+							// Add inline margin to track to center item at large screen sizes
+							marginInline:
+								viewportWidth >= 1024
+									? `${(carouselWidth - carouselItemWidth) / 2}px`
+									: '0px',
 						}}
-						className={`flex transition-transform duration-300`}
+						className="flex transition-transform duration-300 w-max"
 					>
-						{testimonials.map((testimonial) => (
+						{testimonials.map((testimonial, index) => (
+							// item
 							<div
 								key={testimonial.key}
-								className="flex-shrink-0 w-full px-8 md:px-32 lg:px-64"
+								ref={index === 0 ? carouselItemRef : null} // only add to first item
+								style={{ width: `${carouselWidth}px` }}
+								className="flex-shrink-0 lg:max-w-[640px] px-8 md:px-32 lg:px-12"
 							>
-								<div className="border-[1px] border-brand-green-300 p-8 md:px-14 md:py-12 rounded-[2.5rem] min-h-56">
+								<div className="border-[1px] border-brand-green-300 p-8 md:px-14 md:py-12 rounded-[2.5rem] min-h-72">
 									<p className="z-10">{testimonial.description}</p>
 								</div>
 
@@ -100,6 +138,7 @@ export default function TestimonialsSection() {
 						))}
 					</div>
 
+					{/* navigation */}
 					<div className="flex justify-center mt-16 md:mt-32 px-8">
 						<div className="flex justify-between md:max-w-[50%] flex-grow">
 							<button
@@ -139,3 +178,21 @@ export default function TestimonialsSection() {
 		</section>
 	);
 }
+
+const useWindowWidth = () => {
+	const [width, setWidth] = useState(window.innerWidth);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setWidth(window.innerWidth);
+		};
+
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
+	return width;
+};
