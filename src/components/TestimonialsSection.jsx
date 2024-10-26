@@ -74,7 +74,7 @@ export default function TestimonialsSection() {
 		window.addEventListener('resize', handleResize);
 
 		return () => window.removeEventListener('resize', handleResize);
-	}, []);
+	}, [carouselWidth, carouselItemWidth]);
 
 	return (
 		<section className="my-16 md:my-32">
